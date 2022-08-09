@@ -91,11 +91,13 @@ class Welcome(tk.Frame):
         self.next_button = tk.Button(self, text="Next", font=("Arial", 15), bg="green" , command=lambda: controller.show_frame(TonganQuiz))
         self.next_button.place(x=650, y=450)
         
-        self.exit_button = tk.Button(self, text="Back", font=("Arial", 15), bg="red", command=lambda: app.destroy())
+        self.exit_button = tk.Button(self, text="Back", font=("Arial", 15), bg="red", command=lambda: parent.destroy())
         self.exit_button.place(x=100, y=450)
         
 global question_number
-question_number = 0
+#question_number = 0
+#The Python "KeyError: 0" exception is caused when we try to access a 0 key in a a dictionary that doesn't contain the key. To solve the error, set the key in the dictionary before trying to access it or conditionally set it if it doesn't exist
+question_number = 1 #as we are looking at the keys not index positions
 class TonganQuiz(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -175,7 +177,7 @@ class TonganQuiz(tk.Frame):
         self.configure(bg='white smoke')
         
         self.app_label = tk.Label(self, text="Test your language Knowldege. \n Happy Tongan language week!!", bg = "white smoke", font=("Arial Bold", 25))
-        self.app_label.place(x=40, y=150)      
+        self.app_label.place(x=40, y=100)      
         
         self.home_button = tk.Button(self, text="Home", font=("Arial", 15), command=lambda: controller.show_frame(Open))
         self.home_button.place(x=650, y=450)
@@ -284,7 +286,7 @@ class TonganQuiz(tk.Frame):
   
   
     def end_screen(self):
-        root.withdraw() 
+        app.withdraw() 
 
  #starting point of the program and the controller of the display of different frames       
 class Program(tk.Tk):
