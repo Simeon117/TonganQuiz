@@ -173,14 +173,12 @@ class TonganQuiz(tk.Frame):
         
         self.configure(bg='white smoke')
         
-        self.app_label = tk.Label(self, text="Test your language Knowldege. \n Happy Tongan language week!!", bg = "white smoke", font=("Arial Bold", 25))
-        self.app_label.place(x=40, y=100)      
+              
         
         self.home_button = tk.Button(self, text="Home", font=("Arial", 15), command=lambda: controller.show_frame(Open))
-        self.home_button.place(x=650, y=450)
+        self.home_button.place(x=650, y=220)
         
-        self.back_button = tk.Button(self, text="Back", font=("Arial", 15), command=lambda: controller.show_frame(Welcome))
-        self.back_button.place(x=100, y=450)
+        
 
         self.question_number = 1
 
@@ -224,12 +222,12 @@ class TonganQuiz(tk.Frame):
         #Confirm button
         self.confirm_button = tk.Button (self, text = "Confirm", font = ("Helvetica", "13", "bold"), bg = background_color, command = self.test_progress)
 
-        self.confirm_button.grid (row = 6, padx = 5, pady = 5)
+        self.confirm_button.place (x = 650, y = 450)
 
         #Score label
         self.score_label = tk.Label (self, text = "SCORE", font = ("Helvetica", "15"), bg = background_color,)
 
-        self.score_label.grid (row = 7, padx = 10, pady = 1)
+        self.score_label.place (x = 100, y = 460)
 
         #Quit Button
         self.quit= tk.Button(self, text="Quit", font=("Helvetica", "13", "bold"), bg="IndianRed1", command=self.end_screen)
