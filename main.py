@@ -99,75 +99,75 @@ class TonganQuiz(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         self.tongan_questions = {
-          1: ["What is the name of the hall?", #item 1, index 0 will be the question
-          'Watson Hall', # Item 2, index 1 will be the first choice
-          'Ball Hall', # Item 3, index 2 will be the second choice
-          'Butler Hall', # Item 4, index 3 will be the third choice
-          'School Hall', # Item 5, index 4 will be the fourth choice
-          'Cathedral Hall'# Item 6, index 5 will be the write statement we need to dsiplay the right stetment if the user enters the wrong choice
+          1: ["What is the capital of Tonga?", #item 1, index 0 will be the question
+          'Papeete', # Item 2, index 1 will be the first choice
+          'Avarua', # Item 3, index 2 will be the second choice
+          'Nuku`alofa', # Item 4, index 3 will be the third choice
+          'Alofi', # Item 5, index 4 will be the fourth choice
+          'Funafuti'# Item 6, index 5 will be the write statement we need to dsiplay the right stetment if the user enters the wrong choice
           ,3], # Item 7, index 6 will be the postion of the right answer (ubdex where right answer sits), this will be our check if answer is correct or no
-          2: ["How many fields are there?",
-          '2',
-          '4',
-          '7',
-          '3',
-          '6'
+          2: ["What is Hello in Tongan?",
+          'Mālō e lelei',
+          'Talofa',
+          'Fakalofa Atu',
+          'Kia Ora',
+          'Aloha'
           ,1],
-          3: ["Where can you find the tuckshop?",
-          'B Block',
-          'The Quad',
-          'Field One',
-          'Hockey Turf',
-          'T Block'
+          3: ["Which term do you use to ask how someone is in Tongan?",
+          'Vacava tiko',
+          'Fefe hake',
+          'kei te pehea koe',
+          'O ā mai oe',
+          'Pehea ʻoe'
           ,2],
-          4: ["How many Gyms in school?",
-          '8',
-          '3',
-          '2',
-          '4',
-          '1'
+          4: ["How do you say teacher in Tongan?",
+          'Kaiako',
+          'Faiako',
+          'Tija',
+          'Faiaoga',
+          'Kumu'
           ,2],
-          5: ["What is the street address of Mount Roskill Grammar?",
-          '23  Odessa Crescent',
-          '22  Garden Road',
-          '14  Kesteven Avenue',
-          '17  Granada Place',
-          '37 Frost Road'
+          5: ["What is sorry in Tongan?",
+          '23  O',
+          'Malie,
+          'E kala mai',
+          'Vosota',
+          'Fakamolemole'
           ,5],
-          6: ["Where is the Maths Deparment?",
+          6: ["How do you announce name in Tongan?",
           'The Library',
-          'C Block',
-          'A Block',
-          'The Hall',
-          'E Block'
+          '`O (name) wau',
+          'Ko (name) au',
+          'O (name) a`u',
+          'Ko (name) ahau'
           ,3],
-          7: ["What is the name of the principal?",
-          'Leon Kennedy',
-          'Gordon Freeman',
-          'Marcus Fenix',
-          'Greg Watson',
-          'Anthony Carmine'
+          7: ["What is thank you in Tongan?",
+          'Fa`afetai',
+          'Whakawhetai koe',
+          'Vinaka',
+          'malo ʻaupito',
+          'Mahalo iā ʻoe'
           ,4],
-          8: ["How many turfs are there?",
-          '2',
-          '5',
-          '3',
-          '1',
-          '2'
+          8: ["What is the Tongan name for New Zealand?",
+          'Nuʻu Sila',
+          'Niu Sila',
+          'Aotearoa',
+          'Ni`u Siladi',
+          'Niu Silani'
           ,1],
-          9: ["Where is the Commerce department?",
-          'T Block',
-          'Gym 4',
-          'E Block',
-          'D Block',
-          'The Library'
+          9: ["What is yes and no in tongan",
+          'Io and Sega',
+          'E and To',
+          '`Io and `Ikai',
+          'Ioe and Leai',
+          'Ae and Kao'
           ,3],
-          10:["Where is the Music deparment block?",
-          'E Block',
-          'S Block',
-          'D Block',
-          'G Block',
-          'M Block'
+          10:["What is the word Friend in Tongan",
+          'Kapitiga',
+          'Uo',
+          'E hoa',
+          'I tokani',
+          'Kaungameʻa'
           ,5],
         }
         
