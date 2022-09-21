@@ -129,7 +129,7 @@ class TonganQuiz(tk.Frame):
           ,2],
           5: ["What is sorry in Tongan?",
           '23  O',
-          'Malie,
+          'Malie',
           'E kala mai',
           'Vosota',
           'Fakamolemole'
